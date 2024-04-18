@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kade Wakefield - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: left;
+            background-color: #16af20;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #16c858;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #19b746;
+        }
+
+        a:hover {
+            background-color: #23c44e;
+        }
+
+        .education, .experience, .skills {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="home">Lebron James</a></li>
+        <li><a href="resume">Resume</a></li>
+    </ul>
+
+    <!-- Photo -->
+    <img src="image.png" height="150" alt="Kade Wakefield BYU">
+
+    <header>
+        <h1>Kade Wakefield</h1>
+        <h3>Account Executive</h3>
+    </header>
+
+    <!-- Mission Statement -->
+    <p>Mission Statement: I want to watch Lebron win the NBA Finals in person</p>
+
+    <!-- LinkedIn Link -->
+    <p>See my <a href="https://www.linkedin.com/in/jimvalverde/" target="_blank" title="LinkedIn Page for Jim Valverde">LinkedIn page</a></p>
+
+    <!-- Contact Information -->
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Email: wakefield.kade8@gmail.com</li>
+            <li>Phone: (801) 358-1289</li>
+            <li>Address: 1028 E 30 N N American Fork UT, 84003</li>
+            <li>LinkedIn: https://www.linkedin.com/in/kade-wakefield</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h2 id="edu">Education</h2>
+        <ul>
+            <li>
+                <strong>Brigham Young University</strong> - Bachelor of Finance<br>
+                Graduation Date: May 2026
+            </li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <h2 id="exp">Work Experience</h2>
+        <ul>
+            <li>
+                <strong>BoomCloud</strong> - Account Executive<br>
+                Duration: August 2022 - Present<br>
+                Responsibilities:
+                <ul>
+                    <li>Develop relationships with prospective clients.</li>
+                    <li>Demo clients and close deals.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2 id="ski">Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Git, GitHub</li>
+            <li>Responsive Web Design</li>
+        </ul>
+
+        <a href="#top">Back to Top</a>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
